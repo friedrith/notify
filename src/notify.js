@@ -27,16 +27,13 @@ export default ({ adapter, message, webhook }) =>
       }
 
       const request = https.request(webhook, requestConfig, res => {
-        res.setEncoding('utf8')
-        res.on('data', chunk => console.log(chunk))
         res.on('end', () => resolve())
       })
       request.write(JSON.stringify({ text: message }))
       request.end()
     } else {
-      throw `Adapter "${adapter}" is not handled. Please use one of the following adapters: ${adaptersList}`
+      reject(
+        `Adapter "${adapter}" is not handled. Please use one of the following adapters: ${adaptersList}`
+      )
     }
   })
-
-{
-}

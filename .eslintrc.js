@@ -1,6 +1,12 @@
 module.exports = {
-  extends: ['prettier'],
+  extends: ['eslint:recommended', 'prettier', 'plugin:jest/recommended'],
   parser: 'babel-eslint',
+  env: {
+    es6: true,
+    node: true,
+    commonjs: true,
+  },
+  plugins: ['jest'],
   rules: {
     semi: [2, 'never'],
     'arrow-body-style': 0,
