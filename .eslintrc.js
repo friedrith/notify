@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended', 'prettier', 'plugin:jest/recommended'],
+  extends: ['eslint:recommended', 'plugin:jest/recommended', 'prettier'],
   parser: 'babel-eslint',
   env: {
     es6: true,
@@ -20,11 +20,11 @@ module.exports = {
     'eslint-config-hapi': 0,
     'no-const-assign': 'error',
     'no-unused-vars': [2, { vars: 'all', args: 'none' }],
-    'space-before-blocks': ['error', 'always'],
-    'space-before-function-paren': ['error', 'always'],
+    'space-before-blocks': ['error', 'never'],
+    'space-before-function-paren': ['error', 'never'],
     'space-in-parens': ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],
-    'array-bracket-spacing': ['error', 'always'],
+    'array-bracket-spacing': ['error', 'never'],
     'keyword-spacing': 'error',
     'comma-spacing': 'error',
     'comma-dangle': ['error', 'always-multiline'],
