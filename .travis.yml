@@ -1,0 +1,10 @@
+# travis.yml
+language: node_js
+node_js:
+  - '8'
+install:
+  - yarn
+script:
+  - yarn run commitlint
+  - yarn run lint
+  - yarn run prettier:check
