@@ -19,7 +19,8 @@
     "lint:fix": "eslint --fix src/**/*.js",
     "prettier:check": "prettier --check 'src/**/*.js'",
     "prettier:fix": "prettier --write 'src/**/*.js'",
-    "release": "standard-version"
+    "release": "standard-version",
+    "commitlint": "commitlint --from dcbefce4693ad9bddbebbf22db210441b3d5c2f1"
   },
   "husky": {
     "hooks": {
