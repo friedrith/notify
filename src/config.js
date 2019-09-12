@@ -1,7 +1,6 @@
 import path from 'path'
 import fs from 'fs'
 import os from 'os'
-import { name } from '../package'
 
 export const getFileConfiguration = configFilename => {
   try {
@@ -20,4 +19,4 @@ export const removeEmptyOptions = config =>
   )
 
 export const getDefaultConfigurationFilename = () =>
-  path.resolve(os.homedir(), `.${name}`)
+  path.resolve(os.homedir(), '.notify')

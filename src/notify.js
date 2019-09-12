@@ -1,6 +1,5 @@
 import https from 'https'
 import notifier from 'node-notifier'
-import { name } from '../package'
 
 import adapters, { NATIVE, SLACK } from './config.adapters'
 
@@ -17,7 +16,7 @@ export default ({ adapter, message, webhook }) =>
   new Promise((resolve, reject) => {
     if (adapter === NATIVE) {
       notifier.notify({
-        title: name,
+        title: 'notify',
         message,
       })
       resolve()

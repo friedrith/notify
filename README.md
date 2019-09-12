@@ -4,6 +4,14 @@ A easy-to-use command line interface to notify you when a very long terminal pro
 
 ## How to install
 
+```bash
+$ npm install -g @friedrith/notify
+
+# or with yarn
+$ yarn add --global @friedrith/notify
+
+```
+
 ## How to use?
 
 ```bash
