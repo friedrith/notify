@@ -1,6 +1,6 @@
 {
   "name": "@friedrith/notify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A easy-to-use command line interface to notify you when a very long terminal process is finished",
   "main": "index.js",
   "repository": "git@github.com:friedrith/notify.git",
